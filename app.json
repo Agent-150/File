@@ -58,6 +58,21 @@
       "description": "Protect contents from getting forwarded",
       "value": "False",
       "required": false
+    },
+    "API":{
+      "description": "Shortner API ",
+      "value": "",
+      "required": false
+    },
+    "URI":{
+      "description": "Shortner Domain without https://",
+      "value": "",
+      "required": false
+    },
+    "LOG_CHANNEL":{
+      "description": "log channel",
+      "value": "",
+      "required": false
     }
   },
   "buildpacks": [
