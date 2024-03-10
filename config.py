@@ -57,6 +57,16 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 #Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
+# Url Shortner Information 
+SHORT = bool(environ.get('SHORT', True)) # Set False If you want shortlink off else True
+URL = environ.get('URL', 'moneykamalo.com') # your shortlink url domain or url without https://
+API = environ.get('API', '0eefb93e1e3ce9470a7033115ceb1bad13a9d674') # your url shortner api
+TECH_VJ_TUTORIAL = os.environ.get("TECH_VJ_TUTORIAL", "https://t.me/How_To_Open_Linkl")
+
+# channel information
+LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "")) # your log channel id and make bot admin in log channel with full right 
+    
+
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 
